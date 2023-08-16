@@ -1,0 +1,104 @@
+<div class="container">
+    <div class="columns is-centered">
+        <div class="column is-half">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">Character Stats</p>
+                </header>
+                <div class="card-content">
+                    <form id="horseStatsForm">
+                        <div class="field">
+                            <label class="label" for="horse_name">Horse Name:</label>
+                            <div class="control">
+                                <input class="input" type="text" id="horse_name" name="horse_name"
+                                    value="{{ horse_name }}">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="horse_breed">Horse Breed:</label>
+                            <div class="control">
+                                <input class="input" type="text" id="horse_breed" name="horse_breed"
+                                    value="{{ horse_breed }}">
+                            </div>
+                        </div>
+                        <div class="field has-addons">
+                            <label class="label" for="horse_power">Horse Power:</label>
+                            <div class="control">
+                                <button type="button" class="button is-small decrement"
+                                    data-stat="horse_power">-</button>
+                            </div>
+                            <div class="control">
+                                <span class="button is-static" data-stat="horse_power">{{ horse_power }}</span>
+                            </div>
+                            <div class="control">
+                                <button type="button" class="button is-small increment"
+                                    data-stat="horse_power">+</button>
+                            </div>
+                            <input type="hidden" id="horse_power" name="horse_power" value="{{ horse_power }}">
+                        </div>
+                        <div class="field has-addons">
+                            <label class="label" for="horse_speed">Horse Speed:</label>
+                            <div class="control">
+                                <button type="button" class="button is-small decrement"
+                                    data-stat="horse_speed">-</button>
+                            </div>
+                            <div class="control">
+                                <span class="button is-static" data-stat="horse_speed">{{ horse_speed }}</span>
+                            </div>
+                            <div class="control">
+                                <button type="button" class="button is-small increment"
+                                    data-stat="horse_speed">+</button>
+                            </div>
+                            <input type="hidden" id="horse_speed" name="horse_speed" value="{{ horse_speed }}">
+                        </div>
+                        <div class="field has-addons">
+                            <label class="label" for="horse_smarts">Horse Smarts:</label>
+                            <div class="control">
+                                <button type="button" class="button is-small decrement"
+                                    data-stat="horse_smarts">-</button>
+                            </div>
+                            <div class="control">
+                                <span class="button is-static" data-stat="horse_smarts">{{ horse_smarts }}</span>
+                            </div>
+                            <div class="control">
+                                <button type="button" class="button is-small increment"
+                                    data-stat="horse_smarts">+</button>
+                            </div>
+                            <input type="hidden" id="horse_smarts" name="horse_smarts" value="{{ horse_smarts }}">
+                        </div>
+                        <div class="field has-addons">
+                            <label class="label" for="horse_weight">Horse Weight:</label>
+                            <div class="control">
+                                <button type="button" class="button is-small decrement"
+                                    data-stat="horse_weight">-</button>
+                            </div>
+                            <div class="control">
+                                <span class="button is-static" data-stat="horse_weight">{{ horse_weight }}</span>
+                            </div>
+                            <div class="control">
+                                <button type="button" class="button is-small increment"
+                                    data-stat="horse_weight">+</button>
+                            </div>
+                            <input type="hidden" id="horse_weight" name="horse_weight" value="{{ horse_weight }}">
+                        </div>
+                        <div class="field">
+                            <label class="label" for="horse_description">Description:</label>
+                            <div class="control">
+                                <textarea class="textarea" id="horse_description"
+                                    name="horse_description">{{ horse_description }}</textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit" class="button is-primary">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/horsegen.js"></script>

@@ -1,0 +1,26 @@
+<h1 class="title has-text-centered">I am the home page</h1>
+
+<div class="columns is-multiline">
+    {{#each horses}}
+    <div class="column is-one-third">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="{{horse_image}}" alt="{{horse_name}}">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p class="title">
+                    <a href="/horseCharacter/{{id}}">{{horse_name}}</a>
+                </p>
+                <p class="subtitle">{{horse_breed}}</p>
+                <p class="subtitle">{{horse_power}}</p>
+                <p class="subtitle">{{horse_speed}}</p>
+                <p class="subtitle">{{horse_smarts}}</p> <!-- This may need to be horse_smarts -->
+                <p class="subtitle">{{horse_weight}}</p>
+                <p class="subtitle">{{horse_description}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
